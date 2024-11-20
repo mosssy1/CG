@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            gap: 70px;
+        }
+
+        .letterK {
+            animation: letterAnim 2s ease-out infinite;
+        }
+
+        .letterA {
+            animation: letterAnim 2s ease-out infinite;
+            animation-delay: 500ms;
+        }
+
+        .letterG {
+            animation: letterAnim 2s ease-out infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes letterAnim {
+            0% {
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-70px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <svg  class="letterK" width="103" height="164" viewBox="0 0 103 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="23" height="164" fill="#6D22E8"/>
+            <rect x="60.1172" width="23" height="89.0379" transform="rotate(24.6374 60.1172 0)" fill="#6D22E8"/>
+            <rect x="97.8496" y="150.067" width="23" height="93.9356" transform="rotate(143.047 97.8496 150.067)" fill="#6D22E8"/>
+            <rect x="6" y="66" width="38" height="23" fill="#6D22E8"/>
+            <rect x="60" width="29" height="20" fill="#6D22E8"/>
+            <rect x="79" y="144" width="24" height="20" fill="#6D22E8"/>
+            </svg>
+        <svg  class="letterA" width="154" height="164" viewBox="0 0 154 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="66.0801" width="23" height="168" transform="rotate(23.162 66.0801 0)" fill="#24F939"/>
+            <rect x="66.1318" y="9.35449" width="23.7847" height="167.665" transform="rotate(-23.16 66.1318 9.35449)" fill="#24F939"/>
+            <rect x="32" y="89" width="87" height="22" fill="#24F939"/>
+            <rect x="66" width="22" height="7" fill="#24F939"/>
+        </svg>
+        <svg class="letterG" width="94" height="164" viewBox="0 0 94 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="23" height="164" fill="#F51072"/>
+            <rect width="94" height="23" fill="#F51072"/>
+        </svg>                
+    </div>
+</body>
+</html>
