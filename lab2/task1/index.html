@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+            margin: 0;
+            background: url(./setka.svg);
+        }
+        .content {
+            width: 100%;
+            position: relative;
+        }
+
+        #image {
+            position: absolute;
+            left: 50%;
+            top: 50%; 
+            transform: translate(-50%, -50%);
+            background-size: cover;
+            will-change: left, top;
+        }
+
+        .uploadButton {
+            background: rgb(240, 115, 115);
+            padding: 0 30px;
+            font-size: 20px;
+            height: 50px;
+            width: 120px;
+            display: flex;
+            border-radius: 15px;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <label for="fileInput" class="uploadButton">Open file</label> 
+        <input type="file" id="fileInput" accept=".jpg, .jpeg, .png" hidden/>
+        <div id="image"></div>
+    </div>
+</body>
+</html>
+<!-- переназвать кнопку -->
