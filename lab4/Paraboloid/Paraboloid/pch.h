@@ -1,0 +1,10 @@
+#pragma once
+#define _USE_MATH_DEFINES
+#include <GLFW/glfw3.h>
+#include <chrono>
+#include <cmath>
+#include <../../Paraboloid/glm/glm/ext/matrix_clip_space.hpp>
+#include <../../Paraboloid/glm/glm/ext/matrix_transform.hpp>
+#define GLM_ENABLE_EXPERIMENTAL
+#include <../../Paraboloid/glm/glm/ext.hpp>
+#include <stdexcept>
